@@ -28,9 +28,12 @@ class MyScene extends Phaser.Scene {
         if (this.player_direction == 1) {
             this.taro.x += 5;
             this.taro.y += 5;
+            this.taro.angle += 5;
         } else {
             this.taro.x -= 5;
             this.taro.y -= 5;
+
+            this.taro.angle += 5;
         }
     }
 }
